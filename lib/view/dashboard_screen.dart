@@ -423,6 +423,18 @@ class _DashBoardScreenState extends State<DashBoardScreen> {
               SizedBox(
                 height: 20.h,
               ),
+              SizedBox(
+                height: 0.h,
+              ),
+              SizedBox(
+                height: 0.h,
+              ),
+              SizedBox(
+                height: 0.h,
+              ),
+              SizedBox(
+                height: 0.h,
+              ),
               _buildGrid(itemList, _getGroupedStatusCount(itemList)),
             ],
           ),
