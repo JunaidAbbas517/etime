@@ -5,11 +5,9 @@ import '../routes/route_names.dart';
 class MenuBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return
-      Drawer(
+    return Drawer(
       width: MediaQuery.of(context).size.width * 0.55,
       child: ListView(
-
         // Remove padding
         padding: EdgeInsets.zero,
         children: [
@@ -21,15 +19,14 @@ class MenuBarWidget extends StatelessWidget {
                 child: Image.network(
                   'https://img.hubbis.com/optimiser/img/individual/cropped/6637f4b4d0666938ad68075c969ff801f9270f5a.jpg',
                   fit: BoxFit.cover,
-                  width: 90,
-                  height: 90,
+                  width: 80,
+                  height: 80,
                 ),
               ),
             ),
             decoration: BoxDecoration(
               color: Colors.blue,
               borderRadius: BorderRadius.circular(10.0),
-
             ),
           ),
           ListTile(
@@ -41,9 +38,9 @@ class MenuBarWidget extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.article_outlined ),
+            leading: Icon(Icons.article_outlined),
             title: Text('Attendance'),
-            onTap: () =>  Navigator.pushNamed(
+            onTap: () => Navigator.pushNamed(
               context,
               RouteName.attendanceScreen,
             ),
@@ -51,12 +48,11 @@ class MenuBarWidget extends StatelessWidget {
           ListTile(
             leading: Icon(Icons.description_sharp),
             title: Text('Leaves'),
-            onTap: () =>  Navigator.pushNamed(
+            onTap: () => Navigator.pushNamed(
               context,
               RouteName.leavesScreen,
             ),
           ),
-
           ListTile(
             leading: Icon(Icons.swipe_outlined),
             title: Text('ODs'),
@@ -66,9 +62,9 @@ class MenuBarWidget extends StatelessWidget {
             ),
           ),
           ListTile(
-            leading: Icon(Icons.access_time_filled ),
+            leading: Icon(Icons.access_time_filled),
             title: Text('Shift'),
-            onTap: () =>  Navigator.pushNamed(
+            onTap: () => Navigator.pushNamed(
               context,
               RouteName.shiftScreen,
             ),
