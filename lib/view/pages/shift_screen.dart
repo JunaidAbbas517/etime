@@ -185,7 +185,7 @@ class _ShiftScreenState extends State<ShiftScreen> {
                             style: GoogleFonts.aBeeZee(fontSize: 13.sp),
                           ),
                         ),
-                        SizedBox(width: 2.w),
+                        SizedBox(width: 3.w),
                         Container(
                           decoration: BoxDecoration(
                             border: Border.all(
